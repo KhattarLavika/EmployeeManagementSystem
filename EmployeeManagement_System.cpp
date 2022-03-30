@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdio.h>
 #include<iomanip>
 #include<string.h>
 using namespace std;
@@ -36,8 +37,8 @@ class Management
 				if(emp[i].Id==Id)
 				{
 					flag=true;
-					cout<<setw(10)<<"Id"<<setw(10)<<"Name"<<setw(10)<<"Age"<<setw(10)<<"Department"<<endl;
-					cout<<setw(10)<<emp[i].Id<<setw(10)<<emp[i].Name<<setw(10)<<emp[i].age<<setw(10)<<emp[i].Dept<<endl;
+					cout<<setw(10)<<"Id"<<setw(10)<<"Name"<<setw(10)<<"Age"<<setw(15)<<"Department"<<endl;
+					cout<<setw(10)<<emp[i].Id<<setw(10)<<emp[i].Name<<setw(10)<<emp[i].age<<setw(15)<<emp[i].Dept<<endl;
 				}
 			}
 			if(flag==false)
@@ -281,5 +282,4 @@ int main()
 	}while(Option!=0);
 	return 0;
 }
-
 
